@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+
+    <!-- Bootstrap alreay include reset Normalize.css-->
+    <!--<link rel='stylesheet' type = 'text/css' href='reset.css'> -->
+
+    <!-- Bootstrap and CSS here-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel='stylesheet' type = 'text/css' href='style.css'> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+  <body class='container-fluid'>
+      <div class='row' id='app'>
+        
+          <div class ='shadow1' id='headers'>
+            <!-- Title and subtitles! -->
+            <h1 id='main-title' class = 'center'>Play the Guessing Game!</h1>
+            <h2 id = 'sub-title' class = 'center'>Guess a number between 1-100!</h3>
+          </div>
+  
+          <div id='main'>
+            <div id='parent-input'>
+              <form>
+                <!-- Player's guess input, and submit button -->
+                <input class='center shadow border-shadow' id = 'player-input' type='text' autofocus="autofocus">
+                <input class ='center border-shadow' type = 'submit' id= 'submit'>
+              </form>
+              </div>
+            </div>
+  
+            <div id='guesses'>
+              <!-- unordered list of guesses -->
+              <ul class='guess-list center'>
+                <li class='guess border-shadow'>-</li>
+                <li class='guess border-shadow'>-</li>
+                <li class='guess border-shadow'>-</li>
+                <li class='guess border-shadow'>-</li>
+                <li class='guess border-shadow'>-</li>
+              </ul>
+            </div>
+  
+            <div id="menu-btns" class='center'>
+              <!-- reset and hint buttons -->
+              <button class='btn btn-warning border-shadow' id='reset'>Reset</button>
+              <button class = 'btn btn-primary center border-shadow' id='hint'>Hint</button>
+  
+            </div>
+          </div>
+        </div>
+  
+  
+  
+      <div class='row' id='footer'>
+          <div>
+            <div class='col-sm-4 center'>
+              <img src='./assets/fa-logo@2x.png'></img>
+            </div>
+  
+            <div class='col-sm-4 center' id='footer-creater'>
+              <h4>Project by YAN SHEN</h4>
+            </div>
+  
+            <div class='col-sm-4 center'>
+              <img src='./assets/grace_hopper_academy.png'></img>
+            </div>
+  
+  
+          </div>
+      </div>
+        <script type='text/javascript' src= 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script type='text/javascript' src = 'GuessGame.js'></script>
+      
+  </body>
+</html>
+
+<!--
+  Watch the feature video above to get a feel for the starting HTML. (video will be available soon, 
+  you can still start on the project)
+Fill the gaps in the code with the appropriate HTML tags! 
+You will need to fill in the headers, input and submit button, list of previous guesses, and the reset and hint buttons.
+A few notes: Your input tag can have a few special attributes that make for a better user experience. 
+For example, autofocusing on the input box when the DOM loads, giving placeholder text, and setting a maxlength.
+-->

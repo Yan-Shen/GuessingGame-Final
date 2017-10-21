@@ -1,0 +1,146 @@
+body {
+    font-size: 40px;
+    box-sizing: border-box;
+    background-image: url('./assets/numbers_border.jpg');
+    background-size: 100%;
+}
+
+h1 {
+  font-size: 1em;
+}
+  h2 {
+  font-size: 0.5em;
+}
+h4 {
+  font-size: 0.3em;
+}
+
+/* decide text alignment inside the content box*/
+.center {
+    text-align: center;
+}
+  
+.shadow{
+  text-shadow:     
+  0 1px 0 hsl(174,5%,80%),
+  0 2px 0 hsl(174,5%,75%),
+  0 3px 0 hsl(174,5%,70%),
+  0 4px 0 hsl(174,5%,66%),
+  0 5px 0 hsl(174,5%,64%),
+  0 6px 0 hsl(174,5%,62%),
+  0 7px 0 hsl(174,5%,61%),
+  0 8px 0 hsl(174,5%,60%),
+
+  0 0 5px rgba(0,0,0,.05),
+  0 1px 3px rgba(0,0,0,.2),
+  0 3px 5px rgba(0,0,0,.2),
+  0 5px 10px rgba(0,0,0,.2),
+  0 10px 10px rgba(0,0,0,.2),
+  0 20px 20px rgba(0,0,0,.3);
+} 
+
+.shadow1 {
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+	color: #9c8468;
+	opacity: 0.8;
+	font: 80px 'Museo700';
+}
+
+.border-shadow{
+  box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.5), 
+  inset 0 -3px 4px -1px rgba(0, 0, 0, 0.2), 0 -10px 15px -1px rgba(255, 255, 255, 0.6), 
+  inset 0 3px 4px -1px rgba(255, 255, 255, 0.2), 
+  inset 0 0 5px 1px rgba(255, 255, 255, 0.8), 
+  inset 0 20px 30px 0 rgba(255, 255, 255, 0.2);
+}
+ /* --------------------------------heading area---------------------------- */
+  #headers {
+    margin: 60px auto 60px auto;
+    color: hotpink;
+  }
+
+  #main-title {
+        margin: 20px auto 20px auto;
+  }
+    
+  #sub-title {
+    margin: 20px auto 20px auto;
+  }
+
+/* -----------------------------input area-------------------------------- */
+  #parent-input {
+    position: relative;
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #player-input{
+      display: inline-block;
+      width: 125px;
+      height: 125px;
+      border: solid 3px hotpink;
+      
+      border-radius: 62.5px;
+      color:gray;
+    
+}
+
+  #submit{
+    position: absolute;
+    left: 90px;
+    top: 80px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: solid 1px purple;
+    border-radius: 25px;
+    font-size: 0.3em;
+}
+
+#submit:hover{
+    border-width: 2px;
+    font-weight: 700px;
+    background-color: pink;
+}
+
+/* ---------------------------disply list area-------------------------------- */
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+#guesses{
+    margin-top:40px;
+    margin-bottom: 5px;
+}
+
+.guess{
+  font-size: 0.5em;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  padding-top: 15px;
+}
+
+/* ------------------------------disply footer-------------------------------- */
+#footer {
+    width: 100%;
+    border-top: solid 2px black;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+}
+
+img {
+    display: inline;
+    width: 150px;
+    height: 75px;
+}
+
+#footer-creater{
+    margin-top: 10px;
+}
